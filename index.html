@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ARKZONE — Future Architecture Experience</title>
+  <meta name="description" content="Arkzone delivers immersive, futuristic architecture experiences blending technology and design into cinematic environments." />
+  <meta name="theme-color" content="#0a0e1a" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ========== LOADER ========== -->
+  <div id="loader" class="loader">
+    <div class="loader-inner">
+      <div class="loader-ring"></div>
+      <span class="loader-text">ARKZONE</span>
+      <div class="loader-progress">
+        <div class="loader-progress-bar" id="loaderBar"></div>
+      </div>
+      <span class="loader-percent" id="loaderPercent">0%</span>
+    </div>
+  </div>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav id="navbar" class="navbar">
+    <a href="#hero" class="nav-logo">ARK<span>ZONE</span></a>
+    <div class="nav-links" id="navLinks">
+      <a href="#hero" class="nav-link active" data-section="hero">Home</a>
+      <a href="#about" class="nav-link" data-section="about">About</a>
+      <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+      <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ========== HERO SCROLL CONTAINER ========== -->
+  <div class="hero-scroll-container" id="heroScrollContainer">
+    <section id="hero" class="hero">
+      <canvas id="heroCanvas" class="hero-canvas"></canvas>
+      <div class="hero-overlay"></div>
+      <div class="hero-particles" id="particles"></div>
+      <div class="hero-content">
+        <div class="hero-badge reveal">
+          <span class="badge-dot"></span>
+          Future Architecture
+        </div>
+        <h1 class="hero-title reveal">
+          <span class="title-line">ARK</span><span class="title-line accent">ZONE</span>
+        </h1>
+        <p class="hero-subtitle reveal">Future Architecture Experience</p>
+        <p class="hero-desc reveal">Pushing boundaries of space, form &amp; light — where tomorrow's architecture is born today.</p>
+        <a href="#projects" class="btn btn-primary reveal" id="ctaExplore">
+          <span>Explore Now</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+      <div class="hero-scroll-hint">
+        <div class="scroll-mouse">
+          <div class="scroll-dot"></div>
+        </div>
+        <span>Scroll to explore</span>
+      </div>
+    </section>
+  </div>
+
+  <!-- ========== ABOUT SECTION ========== -->
+  <section id="about" class="section about">
+    <div class="container">
+      <div class="section-label reveal"><span class="label-line"></span>About Us</div>
+      <h2 class="section-title reveal">We Design the <span class="accent">Unimaginable</span></h2>
+      <div class="about-grid">
+        <div class="glass-card about-card reveal">
+          <div class="card-icon">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3>Immersive Design</h3>
+          <p>We create architectural experiences that transcend physical limitations, blending digital innovation with real-world spatial design.</p>
+        </div>
+        <div class="glass-card about-card reveal">
+          <div class="card-icon">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <h3>Precision Engineering</h3>
+          <p>Every pixel, every angle is meticulously crafted. Our parametric systems ensure flawless execution from concept to completion.</p>
+        </div>
+        <div class="glass-card about-card reveal">
+          <div class="card-icon">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          </div>
+          <h3>Future Forward</h3>
+          <p>We harness AI, real-time rendering, and generative algorithms to shape environments that adapt, evolve, and inspire.</p>
+        </div>
+      </div>
+      <div class="about-stats reveal">
+        <div class="stat">
+          <span class="stat-number" data-target="150">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Projects</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-target="40">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Countries</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-target="12">0</span>
+          <span class="stat-label">Awards</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-target="98">0</span><span class="stat-suffix">%</span>
+          <span class="stat-label">Satisfaction</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS SECTION ========== -->
+  <section id="projects" class="section projects">
+    <div class="container">
+      <div class="section-label reveal"><span class="label-line"></span>Our Work</div>
+      <h2 class="section-title reveal">Featured <span class="accent">Projects</span></h2>
+      <div class="projects-grid">
+        <div class="project-card reveal" id="project-1">
+          <div class="project-img" style="background: linear-gradient(135deg, #0d1b2a 0%, #1b3a5c 50%, #0ff0fc33 100%);">
+            <div class="project-number">01</div>
+          </div>
+          <div class="project-info">
+            <h3>Nexus Tower</h3>
+            <p>Dubai, UAE</p>
+            <span class="project-tag">Commercial</span>
+          </div>
+        </div>
+        <div class="project-card reveal" id="project-2">
+          <div class="project-img" style="background: linear-gradient(135deg, #0a0e1a 0%, #1a1a3e 50%, #6c5ce755 100%);">
+            <div class="project-number">02</div>
+          </div>
+          <div class="project-info">
+            <h3>Void Pavilion</h3>
+            <p>Tokyo, Japan</p>
+            <span class="project-tag">Cultural</span>
+          </div>
+        </div>
+        <div class="project-card reveal" id="project-3">
+          <div class="project-img" style="background: linear-gradient(135deg, #0a1628 0%, #162d50 50%, #00e5ff44 100%);">
+            <div class="project-number">03</div>
+          </div>
+          <div class="project-info">
+            <h3>Aether Complex</h3>
+            <p>London, UK</p>
+            <span class="project-tag">Residential</span>
+          </div>
+        </div>
+        <div class="project-card reveal" id="project-4">
+          <div class="project-img" style="background: linear-gradient(135deg, #0d0d1a 0%, #1a2744 50%, #0ff0fc22 100%);">
+            <div class="project-number">04</div>
+          </div>
+          <div class="project-info">
+            <h3>Solaris Hub</h3>
+            <p>Singapore</p>
+            <span class="project-tag">Mixed Use</span>
+          </div>
+        </div>
+        <div class="project-card reveal" id="project-5">
+          <div class="project-img" style="background: linear-gradient(135deg, #0a0f1e 0%, #1b2d4a 50%, #6c5ce733 100%);">
+            <div class="project-number">05</div>
+          </div>
+          <div class="project-info">
+            <h3>Prism Gallery</h3>
+            <p>New York, USA</p>
+            <span class="project-tag">Gallery</span>
+          </div>
+        </div>
+        <div class="project-card reveal" id="project-6">
+          <div class="project-img" style="background: linear-gradient(135deg, #0b1120 0%, #1a3050 50%, #00e5ff33 100%);">
+            <div class="project-number">06</div>
+          </div>
+          <div class="project-info">
+            <h3>Echo Station</h3>
+            <p>Seoul, Korea</p>
+            <span class="project-tag">Transport</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT SECTION ========== -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <div class="section-label reveal"><span class="label-line"></span>Get in Touch</div>
+      <h2 class="section-title reveal">Start Your <span class="accent">Vision</span></h2>
+      <div class="contact-wrapper reveal">
+        <div class="glass-card contact-card">
+          <form id="contactForm" class="contact-form" autocomplete="off">
+            <div class="form-group">
+              <input type="text" id="contactName" name="name" placeholder=" " required />
+              <label for="contactName">Your Name</label>
+              <div class="form-line"></div>
+            </div>
+            <div class="form-group">
+              <input type="email" id="contactEmail" name="email" placeholder=" " required />
+              <label for="contactEmail">Email Address</label>
+              <div class="form-line"></div>
+            </div>
+            <div class="form-group">
+              <textarea id="contactMessage" name="message" rows="4" placeholder=" " required></textarea>
+              <label for="contactMessage">Your Message</label>
+              <div class="form-line"></div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-submit" id="submitBtn">
+              <span>Send Message</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#hero" class="footer-logo">ARK<span>ZONE</span></a>
+      <p>&copy; 2026 Arkzone. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
